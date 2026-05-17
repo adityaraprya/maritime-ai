@@ -1,4 +1,8 @@
+import os
 
+print("Generating Master HTML Dashboard...")
+
+html_content = """
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -76,3 +80,10 @@
 
 </body>
 </html>
+"""
+
+# Save the master dashboard file
+with open("index.html", "w", encoding="utf-8") as f:
+    f.write(html_content)
+
+print("\nSUCCESS! Open 'index.html' in your browser to see your complete portfolio dashboard.")
